@@ -6,36 +6,46 @@ Topic - App Rating Prediction
 DESCRIPTION
 Objective: Make a model to predict the app rating, with other information about the app provided.
 Problem Statement:
+
 Google Play Store team is about to launch a new feature wherein, certain apps that are promising, are boosted in visibility. The boost will manifest in multiple ways including higher priority in recommendations sections (“Similar apps”, “You might also like”, “New and updated games”). These will also get a boost in search results visibility.  This feature will help bring more attention to newer apps that have the potential.
 Domain: General
+
 Analysis to be done: The problem is to identify the apps that are going to be good for Google to promote. App ratings, which are provided by the customers, is always a great indicator of the goodness of the app. The problem reduces to: predict which apps will have high ratings.
+
 Content: Dataset: Google Play Store data (“googleplaystore.csv”)
 Fields in the data –
+
 •	App: Application name
 Object/string data type
+
 •	Category: Category to which the app belongs 
 Object/string data type
+
 •	Rating: Overall user rating of the app
 Object/string data type replace by .astype(float)
+
 •	Reviews: Number of user reviews for the app
 Object/string data type replace by .astype(int/float)
+
 •	Size: Size of the app
 Object/string data type replace by .astype(int/float)
+
 •	Installs: Number of user downloads/installs for the app
 Object/string data type replace by .astype(int)
+
 •	Type: Paid or Free
-Object/strig data type
+
 •	Price: Price of the app
-Object/string data type replace .astype(float)
+
 •	Content Rating: Age group the app is targeted at - Children / Mature 21+ / Adult
+
 •	Genres: An app can belong to multiple genres (apart from its main category). For example, a musical family game will belong to Music, Game, Family genres.
-Object/string data type
+
 •	Last Updated: Date when the app was last updated on Play Store
-Object/string data type
+
 •	Current Ver: Current version of the app available on Play Store
-Object string data type
+
 •	Android Ver: Minimum required Android version
-Object/string data type
  
 Steps to perform:
 1.	Load the data file using pandas. 
