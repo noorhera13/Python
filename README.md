@@ -1,5 +1,4 @@
-# Python
-Python Data Science project. Machine Learning
+#Python Data Science project. Machine Learning
 
 Topic - App Rating Prediction
 
